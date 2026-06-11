@@ -239,13 +239,13 @@ int mic_init() {
         return 0;
 
     if(!ring_buf)
-        ring_buf = (VMUINT8*)vm_malloc(RING_BUFFER_SIZE / 2);
+        ring_buf = (VMUINT8*)vm_malloc(RING_BUFFER_SIZE);
 
     if (!ring_buf) {
         return 1;
     }
 
-    Media_SetBuffer(ring_buf, RING_BUFFER_SIZE);
+    Media_SetBuffer(ring_buf, RING_BUFFER_SIZE / 2);
 
     return 0;
 }
@@ -334,6 +334,9 @@ void mic_stop() {
 }
 
 void mic_deinit() {
+    if (!api_ready)
+        return;
+
     mic_stop();
 
     if (ring_buf) {
