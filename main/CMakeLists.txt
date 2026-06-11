@@ -12,4 +12,4 @@ add_exec_vxp(${TARGET_NAME}
     RAM "${RAM}"
 )
 
-target_link_libraries(${TARGET_NAME} mreapi)
+target_link_libraries(${TARGET_NAME} mreapi mic)
