@@ -25,6 +25,7 @@ add_subdirectory(resources)
 add_subdirectory(mreapi)
 add_subdirectory(run)
 add_subdirectory(mic)
+add_subdirectory(fix_fft)
 
 add_subdirectory(main)
 
