@@ -3,7 +3,7 @@
 Real time audio from microphone FFT spectrogram. The vertical axis is frequency, the horizontal axis is time, the color is signal strength (amplitude) at that frequency. VM_KEY_OK disable/enable scale.
 
 ## File
-- [VxpMic.vxp](https://rdzdx.github.io/list_installed_app/VxpMic.vxp) 
+- [VxpMic.vxp](https://rdzdx.github.io/VxpMic/VxpMic.vxp) 
 
 ## Nokia Phone Signing
 
